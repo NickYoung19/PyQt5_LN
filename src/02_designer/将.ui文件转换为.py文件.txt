@@ -1,0 +1,16 @@
+将.ui文件转换为.py文件
+
+方法一：
+
+python -m PyQt5.uic.pyuic demo.ui -o demo.py
+
+方法二：
+
+绝对路径/pyuic5 demo.ui -o  demo.py
+
+方法三：
+
+配置Pycharm External_Tools工具( File --> Settings --> Tools --> External_Tools )
+Program: python绝对路径
+Arguments: -m PyQt5.uic.pyuic $FileName$ -o $FileNameWithoutExtension$.py
+Working dire: $FileDir$
